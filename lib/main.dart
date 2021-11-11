@@ -93,6 +93,15 @@ class HommePage extends StatelessWidget {
     {
       "video": "assets/videos/center.mp4",
     },
+    {
+      "video": "assets/videos/netaa.mp4",
+    },
+    {
+      "video": "assets/videos/video.mp4",
+    },
+    {
+      "video": "assets/videos/conn.mp4",
+    },
   ];
 
   @override

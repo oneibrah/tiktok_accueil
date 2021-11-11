@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'dart:math' as math;
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -162,6 +163,12 @@ class PostContent extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: const [
+              Icon(
+                Icons.tv,
+                color: Colors.white,
+                size: 15,
+              ),
+              SizedBox(width: 90),
               Text(
                 'Following',
                 style: TextStyle(
@@ -177,6 +184,12 @@ class PostContent extends StatelessWidget {
                   fontWeight: FontWeight.w600,
                 ),
               ),
+              SizedBox(width: 90),
+              Icon(
+                Icons.search,
+                color: Colors.white,
+                size: 15,
+              ),
             ],
           ),
         ),
@@ -191,7 +204,7 @@ class PostContent extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       const Text(
-                        '@Orangedihitalkalanso_001',
+                        '@Orangedigitalkalanso_001',
                         style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.w600,
@@ -285,7 +298,7 @@ class PostContent extends StatelessWidget {
                       child: Column(
                         children: [
                           Icon(
-                            Icons.comment,
+                            Icons.sms,
                             color: Colors.white.withOpacity(0.85),
                             size: 45,
                           ),
@@ -305,7 +318,7 @@ class PostContent extends StatelessWidget {
                       child: Column(
                         children: [
                           Icon(
-                            Icons.share,
+                            MdiIcons.share,
                             color: Colors.white.withOpacity(0.85),
                             size: 45,
                           ),
@@ -320,7 +333,7 @@ class PostContent extends StatelessWidget {
                         ],
                       ),
                     ),
-                        AnimatedLogo(),
+                    AnimatedLogo(),
                   ],
                 ),
               )
@@ -332,9 +345,8 @@ class PostContent extends StatelessWidget {
   }
 }
 
-
 class AnimatedLogo extends StatefulWidget {
-  AnimatedLogo({Key? key}) : super(key: key);
+  const AnimatedLogo({Key? key}) : super(key: key);
 
   @override
   _AnimatedLogoState createState() => _AnimatedLogoState();
@@ -373,10 +385,10 @@ class _AnimatedLogoState extends State<AnimatedLogo>
       child: Container(
         height: 45,
         width: 45,
-        padding: EdgeInsets.all(5),
+        padding: const EdgeInsets.all(5),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(25),
-          image: DecorationImage(
+          image: const DecorationImage(
             image: AssetImage("assets/images/disque.jpg"),
           ),
         ),
